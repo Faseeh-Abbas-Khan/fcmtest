@@ -17,8 +17,9 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(bodyParser.json());
 
+// TODO: put your firebase service account json file
 admin.initializeApp({
-  credential: admin.credential.cert(require("./stay-onside-7dcd2-firebase-adminsdk-fbsvc-311053016b.json")),
+  credential: admin.credential.cert(require("./filepath.json")),
 });
 
 // Routes
