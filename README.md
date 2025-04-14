@@ -15,8 +15,7 @@ Simple Node.js server for sending Firebase Cloud Messages (FCM) to mobile device
 
 3. **Start server**
    ```
-   npm run dev   # development
-   npm start     # production
+   npm run dev
    ```
 
 ## API Usage
@@ -30,11 +29,6 @@ POST /send-notification
   "body": "This is a test notification",
   "data": { "key": "value" }
 }
-```
-
-**Health check**
-```
-GET /health
 ```
 
 ## Test with curl
